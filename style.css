@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: black;
+}
+
+.container {
+	border: 5px solid #333;
+	width: 30vw;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.container:hover {
+	border: 5px solid turquoise;
+	box-shadow: 0 0 20px turquoise, inset 0 0 20px turquoise;
+}
+.container:hover h2 {
+	color: turquoise;
+}
+
+.container:hover .input input {
+	border: 2px solid turquoise;
+	box-shadow: 0 0 10px turquoise, inset 0 0 10px turquoise;
+}
+h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	transition: 0.5s;
+}
+
+.input {
+	/* border: 2px solid blue; */
+	width: 320px;
+	margin: 30px 0;
+	position: relative;
+}
+
+.input input {
+	border: 2px solid red;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #333;
+	outline: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 1rem;
+	padding: 0 10px 0 35px;
+	transition: 0.5s;
+}
+
+.input input::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.input .icon {
+	position: absolute;
+	font-size: 1.2rem;
+	left: 10px;
+	top: 10px;
+	color: white;
+	transition: 0.5s;
+	background: transparent;
+}
+
+.container:hover .input .icon {
+	color: greenyellow;
+	background: none;
+}
+
+.forgot {
+	margin: -15px 0 15px;
+}
+
+.forgot a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.forgot a:hover {
+	text-decoration: underline;
+}
+
+button {
+	width: 100%;
+	height: 3rem;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: 0.6s;
+}
+.container:hover button {
+	background-color: turquoise;
+	color: black;
+	box-shadow: 0 0 20px turquoise;
+	font-size: 2rem;
+}
+.register {
+	text-align: center;
+	margin: 25px;
+}
+
+.register p {
+	color: #fff;
+}
+
+.register p a {
+	color: #333;
+	text-decoration: none;
+	margin-left: 2rem;
+}
+
+.container:hover .register p a {
+	color: turquoise;
+}
+.register p a:hover {
+	text-decoration: underline;
+}
